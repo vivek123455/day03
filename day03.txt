@@ -1,0 +1,82 @@
+1.For the given JSON iterate over all for loops (for, for in, for of, forEach)?
+Ans: For loop
+    var numbers=[10,20,30,40,50]
+    for (var i=0; i<numbers.length; i++)
+     {
+      console.log(numbers[i])
+     }
+
+     For in
+     var json= {
+      jsondata: [
+      one : [11,12,13,14,15],
+      two : [21,22,23],
+      three :[31,32]
+       ]
+       };
+     for(var key in json.jsondata[i]) {
+        console.log(json.jsondata[i])
+        }
+
+      For of
+     const iterable = [10,20,30]
+     for(let value of iterable) {
+        value+ = 1;
+      console.log(value);
+       }
+
+
+     For each
+     const data = await response.json();
+     data.foreach(obj=> {
+     object.entries(obj).foreach(([key,value])
+     => {
+     console.log(`${key} ${value}`);
+     }});
+
+
+    
+2.Create your own resume data in JSON format?
+Ans: let resume = {
+     "basics": {
+     "name":"Amindyala vivek",
+     "email":"amindyalavivek@gmail.com",
+     "phone no":"9493163130",
+     "address":"H.no:3-5-271",
+     "street":"shivaji nagar",
+     "city":"Nizamabad",
+     "languages known":"telugu,hindi,english",
+     "hobbies":"playing cricket,watching movies",
+       },
+     "education":[{
+     "institution":"girraj govt college",
+     "study type":"bachelor degree",
+     "course":"M.P.Cs",
+     "passed out":"2017",
+       }],
+      console.log(resume);
+      }
+
+
+
+3.Read about the difference between window, screen and document in javascript?
+Ans: window
+     window is the main javascript object root.
+     window is the first thing that gets loaded 
+     into the browser.window is the execution 
+     context and global object for that contexts
+     javascript.
+
+     screen
+     screen is a small information object about
+     physical screen dimensions.screen is the 
+     screen,it contains properties about the 
+     users display.screen properties width and 
+     height are the full screen.
+
+     document
+     Document is where the document object model
+     is.It is initialized by parsing HTML.document
+     is the main object of the potentially visible
+     document object model.
+
